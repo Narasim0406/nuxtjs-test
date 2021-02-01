@@ -1,0 +1,5 @@
+This is the calling one (probably more useful if the clickable text is words, as the iPhone auto-detects phone numbers and does this automatically):
+<a href="tel:1-408-555-5555">1-408-555-5555</a>
+This is the SMS one, which overrides the default calling behavior:
+<a href="sms:1-408-555-1212">New SMS Message</a>
+Not sure what other things these links might work on… Might be a little dangerous as having non-standard links that don’t work or bring up errors is kinda bad UX. Best for mobile-only sites. If someone know if this works on Android/Blackberry/Other Mobile, comment below.

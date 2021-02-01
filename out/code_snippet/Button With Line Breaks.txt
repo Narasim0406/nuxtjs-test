@@ -1,0 +1,9 @@
+Your best bet is a <button> so you can use a <br> inside, like:
+<button>
+  Some
+  <br>
+  Text
+</button>
+If you need it to be an <input>, and thus the text has to be in a value, it used to be somewhat reliable to use &#x00A; (a carriage return) to break a line in a value like this:
+<input type="button" value="Really&#x00A;Tall&#x00A;Button">
+That still works in Firefox, but doesn’t seem to work in Chrome anymore, and is dangerous in Safari where it cuts off the text after the first entity. 

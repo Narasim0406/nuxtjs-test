@@ -35,6 +35,10 @@
 }
 .box-btn{
   font-size: 1.2rem;
+  a {
+    text-decoration: none;
+    
+  }
 }
 @include laptop-end {
   .box-side-img{

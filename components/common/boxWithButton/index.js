@@ -25,8 +25,12 @@ export class BoxWithButton extends React.Component {
                   <h5 className="box-centered-text text-white">At the heart of the creative and tech industry is a<br/> fundamental need for collaboration.
                   </h5>
                   <p className="box-centered-subtext">It's what drives mutual growth.<br/>And here's your opportunity to do just that?</p>
-                  <button className="bg-white box-btn text-primary mt-2 px-4 py-2 btn">Let's Collaborate</button>
-                  <ImgLazyLoad src={'/textwithbg.gif'} className='box-side-img'></ImgLazyLoad>
+                  <a href="https://www.doodleblue.com/consultus" className="link bg-white box-btn text-primary mt-2 px-4 py-2 btn">
+                    
+                      Let's Collaborate
+                    
+                  </a>
+                  {/* <ImgLazyLoad src={'/textwithbg.gif'} className='box-side-img'></ImgLazyLoad> */}
             </div>
             <div className="box-centered-image"></div>
         </div>

@@ -1,0 +1,23 @@
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+figure:nth-child(2) {
+  transform: scaleY(-1);
+}
+img {
+  width: 150px;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  place-items: center;
+  height: 100vh;
+}
+figure {
+  margin: 10px;
+}
+figcaption {
+  font: bold 20px system-ui, sans-serif;
+}

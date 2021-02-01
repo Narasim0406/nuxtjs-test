@@ -1,0 +1,4 @@
+Place this in your <head> section, and set the href attribute to an image to a 57px x 57px PNG file.
+<link rel="apple-touch-icon" href="iphone-icon.png"/>
+To prevent the iPhone from adding it’s own gloss:
+<link rel="apple-touch-icon-precomposed" href="icon" />

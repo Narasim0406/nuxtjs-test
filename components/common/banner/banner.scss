@@ -1,0 +1,186 @@
+.banner{
+  z-index:5;
+  // background-color: #fff;
+  .banner-content{
+    padding: 4.5rem ;
+    padding-right: 0rem;
+}
+h1,.primary{
+  font-weight: 900;
+  font-size: 2.6rem;
+  // text-transform: uppercase;
+  // padding: 10px
+}
+span.banner-sub-title{
+  color:#BDBDBD !important;
+}
+.banner-title{
+    font-weight:600;
+    font-size:2rem;
+    color:$primary;
+    
+  }
+ img{
+     width:100%
+ } 
+ .overflowHidden {
+  overflow: hidden;
+}
+ img.responsiveImg{
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: middle;
+ }
+}
+@include mobile-land-end{
+  .homeBanner{
+    height: 50vh !important;
+  }
+  
+ 
+ 
+}
+@include mobile-land{
+  .primary{
+    text-align: center !important;
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-height:1366px) {
+  .homeBanner{
+    height: 30vh !important;
+  }
+ 
+}
+
+@include mobile-land{
+  .banner{
+    padding-top: 5rem;
+      .banner-content{
+        padding: 0 ;
+        text-align: center;
+        .banner-title{
+          font-weight:600;
+          font-size:16px;
+          color:$primary;
+          text-align:center; 
+        }
+        .primary{
+          font-size: 24px;
+        }
+        }
+        .banner-sub-text{
+          font-size: 1rem;
+          font-weight:300;
+          line-height: 2rem;
+        }
+    
+  }
+  h1,.primary{
+    font-weight: 900;
+    font-size: 1.6rem !important;
+    text-transform: uppercase;
+  
+  }
+  
+ 
+}
+.homeBanner{
+  position: relative;
+ 
+  -webkit-animation: bg-scrolling-reverse 3s infinite;
+  animation: bg-scrolling-reverse 3s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  margin-bottom: 1rem;
+ 
+  -webkit-animation: bg-scrolling-reverse 3s infinite;
+ 
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 3s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 3s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 3s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  margin-bottom: 1rem;
+}
+
+/* Page Banner */
+.homeBanner {
+  // animation: slideshow 1s linear infinite;
+
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: transparent;
+  
+    background-image: -webkit-gradient(
+          linear,left bottom,left top,
+          color-stop(24%,transparent),
+          color-stop(25%,hsla(0,0%,86.3%,.2)),
+          color-stop(26%,hsla(0,0%,86.3%,.2)),
+          color-stop(27%,transparent),
+          color-stop(74%,transparent),
+          color-stop(75%,hsla(0,0%,86.3%,.2)),
+          color-stop(76%,hsla(0,0%,86.3%,.2)),
+          color-stop(77%,transparent),to(transparent)),
+          -webkit-gradient(linear,left top,right top,
+          color-stop(24%,transparent),
+          color-stop(25%,hsla(0,0%,86.3%,.2)),
+          color-stop(26%,hsla(0,0%,86.3%,.2)),
+          color-stop(27%,transparent),
+          color-stop(74%,transparent),
+          color-stop(75%,hsla(0,0%,86.3%,.2)),
+          color-stop(76%,hsla(0,0%,86.3%,.2)),
+          color-stop(77%,transparent),to(transparent))
+          ;
+  
+  background-size: 100px 100px;
+}
+
+/* Animista */
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+.bannerOverlay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(40%,hsla(0,0%,100%,0)),color-stop(60%,hsla(0,0%,100%,0)),to(#fff));
+}
+
+.banner-sub-text{
+  font-size: 1.4rem;
+  font-weight:300;
+  line-height: 1.5rem;
+}

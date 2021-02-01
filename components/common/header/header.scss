@@ -1,0 +1,201 @@
+
+.logo{
+    width:193px;
+}
+
+header.responsiveHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20;
+  }
+  #slide-left-reverse {
+    position: fixed;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    // background: blue;
+    -webkit-animation: slideReverse 0.1s forwards;
+    -webkit-animation-delay: 0.3s;
+    animation: slideReverse 0.3s forwards;
+    animation-delay: 0.3s;
+}
+@-webkit-keyframes slideReverse {
+    
+  100% { left: -100px; }
+}
+
+@keyframes slideReverse {
+  
+    100% { left: -100px; }
+}
+  #slide-left {
+    position: fixed;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    // background: blue;
+    -webkit-animation: slide 0.1s forwards;
+    -webkit-animation-delay: 0.3s;
+    animation: slide 0.3s forwards;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  
+    100% { left: 0; }
+}
+.opacity-0{
+  opacity:0;
+}
+#slide-right-reverse {
+  position: fixed;
+  right: 0px;
+  
+  // width: 100px;
+  // height: 100px;
+  // background: blue;
+  -webkit-animation: slideReverse1 0.1s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation: slideReverse1 0.3s forwards;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes slideReverse1 {
+  100% { right: -100px; }
+}
+
+@keyframes slideReverse1 {
+  100% { right: -100px; }
+}
+#slide-right {
+  position: fixed;
+  right: -100px;
+  
+  // width: 100px;
+  // height: 100px;
+  // background: blue;
+  -webkit-animation: slide1 0.1s forwards;
+  -webkit-animation-delay: 0.3s;
+  animation: slide1 0.3s forwards;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide1 {
+  100% { right: 0; }
+}
+
+@keyframes slide1 {
+  100% { right: 0; }
+}
+  header.responsiveHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20;
+  }
+  .menuIconWidth {
+    min-width: 65px;
+  }
+  .responsiveHeader .logoWrapper img {
+    width: 50px;
+    height: auto;
+    margin: auto;
+  }
+  
+  .responsiveHeader .logoWrapper {
+    // opacity:0;
+    float: left;
+    display: flex;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    background: $primary;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .menuWrapper {
+    float: right !important;
+    cursor: pointer;
+  }
+  
+  .menuWrapper img {
+    width: 30px !important;
+  }
+  
+  .headerNavWrapper.light .nav-link {
+    color: #fff;
+  }
+  
+  .headerLogoContainer.light {
+    padding-left: 20px;
+  }
+  
+  .headerWrapper.light {
+    padding-top: 20px;
+  }
+  
+  .nuxt-link-exact-active {
+    color: $primary !important;
+  }
+  
+    .menuWrapper {
+      float: right !important;
+      cursor: pointer;
+    }
+    .menuWrapper img {
+      width: 25px !important;
+    }
+    .responsiveHeader .logoWrapper img {
+      width: 40px;
+    }
+    .nav-item{
+      margin-right: 1.4rem !important;
+    }
+    a.link{ 
+      color:#222222;
+      text-decoration: none
+    }
+    
+    .contact-us{
+      position: fixed;
+      bottom: 4rem;
+      z-index: 25;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      
+      img{
+        position: fixed;
+      
+        &.desk{
+          position: fixed;
+        
+          right: 1rem;
+          width:8rem ;
+        }
+        &.mob{
+          position: fixed;
+        
+          right: 1rem;
+          width:3rem;
+  
+        }
+      }
+  }
+  @include mobile-land {
+    .responsiveHeader .logoWrapper {
+      background-color: #000;
+      color:#fff;
+      z-index: 1000;
+    }
+  }

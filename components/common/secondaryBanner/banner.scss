@@ -1,0 +1,16 @@
+span.banner-sub-title{
+  color:#BDBDBD !important;
+}
+.secondary-banner{
+  padding-top: 5rem;
+}
+.banner-breadcrumbs{
+  @include mobile-land{
+    justify-content:center;
+    color:#000;
+    
+  }
+  p>a{
+    color:#BDBDBD;
+  }
+}

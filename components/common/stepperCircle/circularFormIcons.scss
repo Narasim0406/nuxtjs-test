@@ -1,0 +1,115 @@
+
+                    
+                  // mt-4 
+                  @media (max-width: 560px) {
+                      .mid-content p {
+                          font-size: 1rem;
+                      }
+                      .challenge-lets .h3, .challenge-lets .h4 {
+                          font-size: 17px;
+                      }                        
+                      .mt-custom span {
+                          font-size: 13px;
+                      }
+                      .challenge-lets .custom-xs {
+                          flex: 0 0 33.333333%;
+                          max-width: 33.333333%;
+                          padding-right :0px;
+                          padding-left :0px;
+                      }
+                      .challenge-lets {
+                          min-height :315px
+                      }
+                  }
+
+                  @media (max-width: 400px) {
+                      .challenge-lets .h3, .challenge-lets .h4 {
+                          font-size: 13px;
+                      }
+                      .mt-custom span {
+                          font-size: 10px;
+                      }
+                      .challenge-lets .title_mt{
+                          margin-top: 0 !important;
+                      }
+                  }
+                    .bar-1{
+                        padding: 0 7rem;
+                        
+                        div.float-img-circles{
+                            padding:2rem 2rem;
+                            margin-top:3rem;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20);
+                            +.float-img-title{
+                                position: absolute;
+                                margin:0.5rem 0;
+                            }
+                        }
+                        p.within-circle-sub-title{
+                            color:#4F4F4F;
+                            font-size:2.2rem;
+                            padding: 0.5rem;
+                            display: flex;
+                            justify-content: center;
+                                }
+                        }
+                    .middle-circle{
+                        margin:0 5rem;
+                        position: relative;
+                        bottom: 5rem;
+                       
+                    }   
+                    .middle-title{
+                        position: relative !important;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        vertical-align: middle;
+                        bottom: 5rem;
+                    }
+                    .bar-2{
+                        padding: 0rem 7rem;
+                        
+                        div.float-img-circles{
+                            padding:2rem 2rem;
+                            margin-top:5.5rem;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20);
+                            +.float-img-title{
+                                position: absolute;
+                                margin:0.5rem 0;
+                            }
+                        }
+                        p.within-circle-sub-title{
+                            color:#4F4F4F;
+                            font-size:2.2rem;
+                            padding: 0.5rem;
+                            display: flex;
+                            justify-content: center;
+                                }
+                        }
+                        
+                        .bar-3{
+                            padding: 2rem 7rem;
+                            position: relative; 
+                            bottom: 2rem;
+                            
+                            div.float-img-circles{
+                                padding:2rem 2rem;
+                                margin-top:0.5rem;
+                                border-radius: 50%;
+                                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20);
+                                +.float-img-title{
+                                    position: absolute;
+                                    margin:0.5rem 0;
+                                }
+                            }
+                            p.within-circle-sub-title{
+                                color:#4F4F4F;
+                                font-size:2.2rem;
+                                padding: 0.5rem;
+                                display: flex;
+                                justify-content: center;
+                                    }
+                            }

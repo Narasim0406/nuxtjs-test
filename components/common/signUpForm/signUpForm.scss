@@ -1,0 +1,88 @@
+.signUpForm-modal{
+  // background-image: url('/gifs2.gif');
+  // background-repeat: no-repeat;
+  // position: fixed;
+  // left:-3rem;
+  
+  .bg-Gif{
+    
+    object-fit: none;
+    width: 280px;
+    height: 330px;
+    left:0rem;
+    top:-3rem;
+    position: absolute;
+    opacity: 0.1;
+      // width: 120px;
+      // height: auto;
+    
+    object-position: 100% 0;
+  }
+  .bg-Gif-bottom{
+      position: absolute;
+      right: 0rem;
+      opacity: 0.03;
+      bottom: -2.6rem;
+      -o-object-fit: contain;
+      object-fit: contain;
+      width: 280px;
+      height: auto;
+      mix-blend-mode: luminosity;
+  }
+      // width: 120px;
+      // height: auto;
+    
+    // object-position: 100% 0;
+  
+  .signup-Gif{
+    margin: 0;
+    width:229px;
+
+  }
+  .text-content{
+    padding: 0rem
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .sub-description{
+    font-size: 1.3rem;
+    font-weight:300;
+    padding:0 3rem
+  }
+  .download-form-btn{
+    background-color: $primary;
+    padding: 1.2rem 9rem;
+    margin: 3rem 0;
+    color:$white;
+    font-size: 1.5rem;
+    font-weight:normal
+
+
+  }
+  .sub-description1{
+    
+    font-size: 1.5rem;
+   font-weight:500;
+   padding:5rem 3rem
+  }
+}
+@include mobile-port-smart {
+  .signUpForm-modal .download-form-btn {
+    background-color: $primary;
+    padding: 1.2rem 6rem;
+    margin: 3rem 0;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: normal;
+  }
+  .signUpForm-modal input:focus, .form-stepper-choices{
+    width:100%
+  }
+  .bg-Gif-bottom{
+    display: none;
+  }
+}
+
+

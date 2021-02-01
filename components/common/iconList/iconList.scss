@@ -1,0 +1,248 @@
+.list-count{
+  color: #747373;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.list-title{
+  font-weight: bold;
+  font-size: 3rem;
+  color:#000
+}
+.icon-list-box{
+  width:100%;
+  height:13rem;
+  margin:0 1rem;
+}
+.img-icon{
+  mix-blend-mode: multiply;
+}
+.icon-card-list{
+  // padding: 3.5rem;
+  // margin-right:1rem;
+  position: absolute;
+  width: 13rem;
+  height:13rem;
+  border-radius:5px;
+  
+  &:hover{
+   
+    //  opacity:1;
+     background-color: $primary;
+    //  position: absolute;
+    //  bottom: 0; 
+    //  width: 90%;
+    //  height:5rem;
+    .icon-actions{
+      opacity:1;
+      
+      
+    }
+  }
+  
+}
+img.download-list-icon {
+  cursor:pointer;
+  position: relative !important;
+  left: 80% !important;
+  width: 30px !important;
+ 
+}
+img.share-list-icon {
+  // position: absolute !important;
+  top: 0rem !important;
+  width: 30px !important;
+  margin: 0 !important;
+  
+ 
+}
+.icon-actions{
+  opacity:0;
+}
+
+@media (max-width: 400px) {
+  .tooltip {
+    position: absolute;
+    // display: inline-block;
+    // border-bottom: 1px dotted black;
+    opacity: 100;
+    // width:40% !important;
+  }
+}
+
+// .card-icon1{}
+// width: 150px;
+// position: absolute;
+// left: 0;
+// top: 1rem;
+// right: 0;
+// margin: auto;
+
+// :hover{
+//   background-color: $primary;
+// }
+
+@media (max-width: 768px) {
+  .card-icon-list{
+    img{
+      width: 50px;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+    opacity: 100;
+    right: 0.5rem;
+    top: 6rem;
+}
+
+.tooltip .tooltiptext {
+  
+  visibility: hidden;
+  // width: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: #404142ab;
+  // background-color: #006ada;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: relative;
+  /* right: 0; */
+  // left: 70%;
+  z-index: 1;
+  top: 2rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  width:fit-content;
+}
+// .icon-card-list:hover .tooltip{
+//   width: 100%;
+// }
+
+@media (max-width: 400px) {
+  img.share-list-icon {
+    position: absolute !important;
+    top: 4rem !important;
+    width: 30px !important;
+    // left: 8rem !important;
+    margin: 0 !important;
+   
+  }
+  .list-count{
+    color: #747373;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .list-title{
+    font-weight: bold;
+    font-size: 2rem;
+    color:#000
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width:768px) {
+  .tooltip {
+    position: absolute;
+    right:2rem;
+  }
+  .icon-list-box{
+    width:100%;
+    height:8rem;
+    margin:0 0.9rem;
+  }
+  
+}
+@media screen and (max-width: 768px) and (min-width:480px) {
+  .tooltip {
+    position: absolute;
+    right:0rem;
+    top:4rem;
+  }
+  .icon-list-box{
+    width:100%;
+    height:8rem;
+    margin:0 0.5rem;
+  }
+  .img-icon{
+    mix-blend-mode: multiply;
+  }
+  .tooltiptext {
+    top:4rem !important;
+  }
+  .card-icon-list img{
+    top:1rem !important;
+  }
+  .icon-card-list{
+    // padding: 3.5rem;
+    // margin-right:1rem;
+    position: absolute;
+    width: 8rem;
+    height:8rem;
+    border-radius:5px;
+  }
+  .card-icon-list .img-icon{
+    width:80px !important;
+    height:auto !important;
+    top: 1rem;
+  }
+  img.download-list-icon {
+    position: relative !important;
+    // left: 80% !important;
+    width: 20px !important;
+
+   
+  }
+  img.share-list-icon {
+    // position: absolute !important;
+    top: 0rem !important;
+    width: 20px !important;
+    right: 0rem !important;
+    // left: 80% !important;
+    margin: 0 !important;
+   
+  }
+  .tooltip .tooltiptext {
+    top:1rem !important;
+  }
+  
+  
+
+}
+@media screen and (max-width: 480px) and (min-width:320px) {
+  img.share-list-icon {
+    // position: absolute !important;
+    top: 0 !important;
+    right: 1rem !important;
+    // left: 80% !important;
+    margin: 0 !important;
+   
+  }
+  .tooltip {
+    position: absolute;
+    right:0.5rem;
+    top:6rem;
+  }
+  .tooltip .tooltiptext {
+    top:2rem !important;
+  }
+}
+@media screen and (max-width: 1444px) and (min-width:1024px) {
+  .tooltip {
+    position: absolute;
+    opacity: 100;
+    right: 0.5rem;
+    top: 6rem;
+  }
+  img.share-list-icon {
+    top: 0rem !important;
+    width: 30px !important;
+    margin: 0 !important;
+}
+}

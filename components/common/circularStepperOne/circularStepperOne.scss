@@ -1,0 +1,519 @@
+
+                    
+                  // mt-4 
+                //   .back{
+                //     transform: rotate(180deg);
+                //   }
+                @include mobile-port-next {
+                    .mid-content p {
+                          font-size: 1rem;
+                      }
+                      .challenge-lets .h3, .challenge-lets .h4 {
+                          font-size: 17px;
+                      }                        
+                      .mt-custom span {
+                          font-size: 13px;
+                      }
+                      .challenge-lets .custom-xs {
+                          flex: 0 0 33.333333%;
+                          max-width: 33.333333%;
+                          padding-right :0px;
+                          padding-left :0px;
+                      }
+                      .challenge-lets {
+                          min-height :315px
+                      }
+                  }
+
+                  @include mobile-port-smart {
+                    .within-circle-title-Stepper{
+                        font-size:0.8rem !important;
+                        font-weight: 500;
+                        color:$primary;
+                        margin: 3rem 0rem 2rem !important;
+                       +div p.within-circle-sub-title-stepper{
+                            color:#4F4F4F;
+                            font-size:0.8rem !important;
+                            padding: 0.5rem !important;
+                            display: flex;
+                            justify-content: center;
+                                }  
+
+                    }
+                    .form-stepper-choices{
+                        font-size:0.8rem !important;
+                        margin-top: 0.5rem !important;
+                        color:$primary;
+                        font-weight:normal;
+                        padding:1rem 3rem !important;
+                        border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                        border:none;
+                        &:focus{
+                            outline:none;
+                        }
+                        
+                    }
+                    .form-stepper-choices1{
+                        font-size:1.8rem;
+                        margin-top: 2rem;
+                        color:$primary;
+                        font-weight:normal;
+                        padding:1rem 8rem;
+                        border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                        border:none;
+                        &:focus{
+                            outline:none;
+                        }
+                        
+                    }
+                   .right-arrow-btn{
+                       margin-top:1rem !important;
+                       width: 12% !important;
+                       cursor:pointer
+                   }
+                   .right-arrow-btn-step4{
+                    margin-top:1.5rem;
+                    cursor:pointer
+                   }
+                   input:focus , .form-stepper-choices{
+                    outline: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    }
+                    *:focus {
+                        outline: none;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                    }
+                    input:focus ,.form-stepper-choices {
+                        outline: none !important;
+                        text-align: center;
+                        width:80% !important;
+                        box-shadow: none;
+                        &::-webkit-input-placeholder { /* Edge */
+                            color: $primary;
+                            text-align: center;
+                          }
+                          
+                          &:-ms-input-placeholder { /* Internet Explorer */
+                            color: $primary;
+                            text-align: center;
+                          }
+                          
+                          &::placeholder {
+                            color: $primary;
+                            text-align: center;
+                          }
+                    }
+                  }
+                      
+                            .within-circle-title-Stepper{
+                                font-size:2rem;
+                                font-weight: 500;
+                                color:$primary;
+                                margin: 7rem 0rem 2rem;
+                               +div p.within-circle-sub-title-stepper{
+                                    color:#4F4F4F;
+                                    font-size:2.2rem;
+                                    padding: 0.5rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    margin:0;
+                                        }  
+
+                            }
+                            .form-stepper-choices{
+                                font-size:1.8rem;
+                                margin-top: 1rem !important;
+                                color:$primary;
+                                font-weight:normal;
+                                padding:1rem !important;
+                                border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                                border:none;
+                                &:focus{
+                                    outline:none;
+                                }
+                                
+                            }
+                            .form-stepper-choices1{
+                                font-size:1.6rem;
+                                margin-top: 1rem !important;
+                                color:$primary;
+                                font-weight:normal;
+                                padding:1rem !important;
+                                border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                                border:none;
+                                &:focus{
+                                    outline:none;
+                                }
+                                
+                            }
+                            .btn-upload{
+                                font-size:1rem !important;
+                            }
+                           .right-arrow-btn{
+                               margin-top:4rem !important;
+                               cursor:pointer
+                           }
+                           .right-arrow-btn-step4{
+                            margin-top:1.5rem;
+                            cursor:pointer
+                           }
+                           .thanks-Gif{
+                               width:15rem !important;
+
+                           }
+                           input:focus , .form-stepper-choices{
+                            outline: none;
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                            }
+                            *:focus {
+                                outline: none;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                            }
+                            input:focus ,.form-stepper-choices {
+                                outline: none !important;
+                                text-align: center;
+                                box-shadow: none;
+                                &::-webkit-input-placeholder { /* Edge */
+                                    color: $primary;
+                                    text-align: center;
+                                    opacity: 0.5
+                                  }
+                                  
+                                  &:-ms-input-placeholder { /* Internet Explorer */
+                                    color: $primary;
+                                    text-align: center;
+                                    opacity: 0.5
+                                  }
+                                  
+                                  &::placeholder {
+                                    color: $primary;
+                                    text-align: center;
+                                    opacity: 0.5
+                                  }
+                            }
+
+                            @include mobile-land-end {
+                                .within-circle-title-Stepper{
+                                    font-size:1.5rem !important;
+                                    font-weight: 500;
+                                    color:$primary;
+                                    margin: 7rem 0rem 2rem !important;
+                                   +div p.within-circle-sub-title-stepper{
+                                        color:#4F4F4F;
+                                        font-size:1.5rem !important;
+                                        padding: 0.5rem !important;
+                                        display: flex;
+                                        justify-content: center;
+                                            }  
+            
+                                }
+                                .form-stepper-choices{
+                                    font-size:1rem !important;
+                                    margin-top: 2rem !important;
+                                    color:$primary;
+                                    font-weight:normal;
+                                    padding:1rem 3rem !important;
+                                    border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                                    border:none;
+                                    &:focus{
+                                        outline:none;
+                                    }
+                                    
+                                }
+                                .form-stepper-choices1{
+                                    font-size:1rem !important;
+                                    margin-top: 1rem !important;
+                                    color:$primary;
+                                    font-weight:normal;
+                                    padding:1rem 8rem;
+                                    border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                                    border:none;
+                                    &:focus{
+                                        outline:none;
+                                    }
+                                    
+                                }
+                               .right-arrow-btn{
+                                   margin-top:4rem !important;
+                                   width: 50% !important;
+                                   cursor:pointer
+                               }
+                               .thanks-Gif {
+                                width: 12rem !important;
+                                margin-top: 3rem;
+                                }
+                               .right-arrow-btn-step4{
+                                margin-top:2.5rem;
+                                width:50%;
+                                cursor:pointer
+                               }
+                               .btn-upload{
+                                   font-size: 1rem !important
+                               }
+                               input:focus , .form-stepper-choices{
+                                outline: none;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                }
+                                *:focus {
+                                    outline: none;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                }
+                                input:focus ,.form-stepper-choices {
+                                    outline: none !important;
+                                    text-align: center;
+                                    width:65% !important;
+                                    box-shadow: none;
+                                    &::-webkit-input-placeholder { /* Edge */
+                                        color: $primary;
+                                        opacity: 0.5 !important;
+                                        text-align: center;
+                                      }
+                                      
+                                      &:-ms-input-placeholder { /* Internet Explorer */
+                                        color: $primary;
+                                        opacity: 0.5 !important;
+                                        text-align: center ;
+                                      }
+                                      
+                                      &::placeholder {
+                                        color: $primary;
+                                        opacity: 0.5 !important;
+                                        text-align: center;
+                                      }
+                                }
+                            }
+    @include laptop-end {
+        .within-circle-title-Stepper {
+            font-size: 1.5rem !important;
+            margin: 5rem 0rem 2rem !important;
+            +div p.within-circle-sub-title-stepper{
+                color:#4F4F4F;
+                font-size:1rem !important;
+                padding: 0.5rem !important;
+                display: flex;
+                justify-content: center;
+                    }  
+        }
+        .thanks-Gif {
+            width: 10rem !important;
+            margin-top: 3rem;
+        }
+        .right-arrow-btn-step4{
+            margin-top:2.5rem;
+            width:50%;
+            cursor:pointer
+        }
+        .btn-upload{
+            font-size: 1rem !important
+        }
+        .form-stepper-choices {
+            font-size: 1.4rem !important;
+            margin-top: 1rem !important;
+            color: $primary;
+            font-weight: normal;
+            padding: 1rem !important;
+            border-bottom: 1px solid rgba(131, 128, 128, 0.58);
+            border: none;
+        }
+        .form-stepper-choices1{
+            font-size:1rem !important;
+            margin-top: 1rem !important;
+            color:$primary;
+            font-weight:normal;
+            padding:1rem !important;
+            border-bottom:1px solid rgba(131, 128, 128, 0.58);
+            border:none;
+            &:focus{
+                outline:none;
+            }
+            
+        }
+        .right-arrow-btn {
+            margin-top: 3rem !important;
+            cursor: pointer !important;
+        }
+    }
+    @include laptop-mobile-end {
+        .within-circle-title-Stepper {
+            font-size: 1.5rem !important;
+            margin: 5rem 0rem 2rem !important;
+            +div p.within-circle-sub-title-stepper{
+                color:#4F4F4F;
+                font-size:1rem !important;
+                padding: 0.5rem !important;
+                display: flex;
+                justify-content: center;
+                    }  
+        }
+        .form-stepper-choices {
+            font-size: 1.4rem !important;
+            margin-top: 1rem !important;
+            color: $primary;
+            font-weight: normal;
+            padding: 1rem !important;
+            border-bottom: 1px solid rgba(131, 128, 128, 0.58);
+            border: none;
+        }
+        .form-stepper-choices1{
+            font-size:1rem !important;
+            margin-top: 1rem !important;
+            color:$primary;
+            font-weight:normal;
+            padding:1rem !important;
+            border-bottom:1px solid rgba(131, 128, 128, 0.58);
+            border:none;
+            &:focus{
+                outline:none;
+            }
+            
+        }
+        .thanks-Gif {
+            width: 10rem !important;
+            margin-top: 3rem;
+            }
+           .right-arrow-btn-step4{
+            margin-top:2.5rem;
+            width:50%;
+            cursor:pointer
+           }
+           .btn-upload{
+               font-size: 1rem !important
+           }
+        .right-arrow-btn {
+            margin-top: 3rem !important;
+            cursor: pointer !important;
+        }
+    }
+    @include mobile-port {
+        .within-circle-title-Stepper {
+            font-size: 1rem !important;
+            margin: 3rem 0rem 1rem 0 !important;
+            +div p.within-circle-sub-title-stepper{
+                color:#4F4F4F;
+                font-size:0.5rem !important;
+                padding: 0.5rem !important;
+                display: flex;
+                justify-content: center;
+                    }  
+        }
+        .right-arrow-btn-step4{
+            margin-top:2.5rem;
+            width:7%;
+            cursor:pointer
+        }
+        .btn-upload{
+            font-size: 1rem !important
+        }
+        .thanks-Gif {
+            width: 7rem !important;
+            margin-top: 2rem !important;
+            }
+           .right-arrow-btn-step4{
+            margin-top:2.5rem;
+            width:7%;
+            cursor:pointer
+           }
+           .btn-upload{
+               font-size: 0.6rem !important
+           }
+        .right-arrow-btn {
+            margin-top: 3rem !important;
+            cursor: pointer !important;
+        }
+        .form-stepper-choices {
+            font-size: 0.8rem !important;
+            margin-top: 0.25rem !important;
+            color: $primary;
+            font-weight: normal;
+            padding: 1rem !important;
+            border-bottom: 1px solid rgba(131, 128, 128, 0.58);
+            border: none;
+        }
+        .form-stepper-choices1{
+            font-size:0.8rem !important;
+            margin-top: 0.25rem !important;
+            color:$primary;
+            font-weight:normal;
+            padding:1rem !important;
+            border-bottom:1px solid rgba(131, 128, 128, 0.58);
+            border:none;
+            &:focus{
+                outline:none;
+            }
+            
+        }
+        .right-arrow-btn {
+            margin: 2.5rem 0 !important;
+            cursor: pointer !important;
+            width:25px !important;
+        }
+        .right-arrow-btn-step4{
+            margin: 2.5rem 0 !important;
+            width:25px !important;
+            cursor:pointer
+        }
+    }
+    @include mobile-port-mobile-end {
+        // .right-arrow-btn-step4{
+        //     margin-top:2.5rem;
+        //     width:7%;
+        //     margin: 2.5rem 0 !important;
+        //     cursor:pointer
+        // }
+        .btn-upload{
+            font-size: 0.6rem !important;
+            padding:0.25rem 1rem !important;
+        }
+        .within-circle-title-Stepper {
+            font-size: 0.8rem !important;
+            margin: 2rem 0rem 1rem 0 !important;
+            +div p.within-circle-sub-title-stepper{
+                color:#4F4F4F;
+                font-size:0.6rem !important;
+                padding: 0.5rem !important;
+                display: flex;
+                justify-content: center;
+                margin:0;
+                    }  
+        }
+        .form-stepper-choices {
+            font-size: 0.6rem !important;
+            margin-top: 0.25rem !important;
+            color: $primary;
+            font-weight: normal;
+            padding: 1rem !important;
+            border-bottom: 1px solid rgba(131, 128, 128, 0.58);
+            border: none;
+        }
+        .form-stepper-choices1{
+            font-size:0.6rem !important;
+            margin-top: 0.25rem !important;
+            color:$primary;
+            font-weight:normal;
+            padding:0.6rem !important;
+            border-bottom:1px solid rgba(131, 128, 128, 0.58);
+            border:none;
+            &:focus{
+                outline:none;
+            }
+            margin:0!important
+            
+        }
+        .right-arrow-btn {
+            margin: 2.5rem 0 !important;
+            cursor: pointer !important;
+            width:20px !important;
+        }
+        .right-arrow-btn-step4{
+            margin: 1.5rem 0 !important;
+            width:20px !important;
+            cursor:pointer
+        }
+
+    }

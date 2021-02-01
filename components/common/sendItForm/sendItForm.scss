@@ -1,0 +1,73 @@
+.send-it-formbox{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding: 4rem 8%;
+  background-color: #fff;
+  z-index: 250;
+  overflow-y: hidden;
+  .close-icon{
+    width: 2rem;
+  }
+  .logo-consult-icon{
+    width: 11rem;
+  }
+  .sendit-formbox{
+    font-size:1.5rem;
+    margin-top: 0.5rem !important;
+    color:$primary;
+    font-weight:normal;
+    padding:1rem;
+    border-bottom:1px solid rgba(131, 128, 128, 0.58);
+    border:none;
+    &:focus{
+        outline:none;
+        outline: none !important;
+      text-align: left;
+      // width:80% !important;
+      box-shadow: none;
+      &::-webkit-input-placeholder { /* Edge */
+          color: $primary;
+          text-align: left;
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer */
+          color: $primary;
+          text-align: left;
+        }
+        
+        &::placeholder {
+          color: $primary;
+          text-align: left;
+        }
+    }
+  }
+  .service-btn-icon{
+    width: 2rem;
+    height: auto;
+  }
+  .srvc-active{
+    border:1px solid $primary;
+    box-shadow: none;
+  }
+  .sendit-upload-btn{
+    padding: 0.5rem 1rem;
+    color: $primary;
+    border: 1px solid $primary;
+    margin-left: 1rem;
+  }
+  .sendit-download-form-btn{
+    background-color: $primary;
+    color:$white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top:1.5rem;
+  }
+}
+
+@include mobile-port-smart {
+  
+  }
+  
+

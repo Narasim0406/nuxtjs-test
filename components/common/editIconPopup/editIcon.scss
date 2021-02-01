@@ -1,0 +1,23 @@
+
+.close-btn-1{
+  width:1.5rem;
+  height:1.5rem;
+}
+.add-button{
+  font-size: 1.5rem;
+  height: 100%;
+  width: 3.5rem;
+}
+.text-black{
+  font-size: 1.2rem;
+  color:#2C2828;
+  font-weight: bold;
+}
+.dropdown-toggle::after{
+  // border:none !important;
+}
+.popup-button{
+  position: absolute;
+  top: 4.5rem;
+  width: fit-content;
+}

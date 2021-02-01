@@ -1,0 +1,72 @@
+.mid-content p {
+  background-color: #fff;
+  font-size: 2rem;
+  line-height: 1.2em;
+  color: #4F4F4F;
+  font-weight: 100;
+}
+.color-blue {
+  color: $primary;
+}
+.border-circle {
+  max-width: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  vertical-align: middle;
+
+}
+.challenge-lets{
+  background-image : url(/images/Ellipse5.png);
+  min-height: 597px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.challenge-lets .justify-content-center{
+  cursor : pointer;
+}
+.mt-custom {
+  margin-top: 0.9rem !important
+}
+.mt-custom-2 {
+  margin-top: 5em !important;
+}
+.mt-custom span {
+  font-size: 15px;
+  color: #4F4F4F;
+}    
+// mt-4 
+@include mobile-port-next {
+  .mid-content p {
+      font-size: 1rem;
+  }
+  .challenge-lets .h3, .challenge-lets .h4 {
+      font-size: 17px;
+  }                        
+  .mt-custom span {
+      font-size: 13px;
+  }
+  .challenge-lets .custom-xs {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      padding-right :0px;
+      padding-left :0px;
+  }
+  .challenge-lets {
+      min-height :315px
+  }
+}
+
+@include mobile-port-smart{
+  .challenge-lets .h3, .challenge-lets .h4 {
+      font-size: 13px;
+  }
+  .mt-custom span {
+      font-size: 10px;
+  }
+  .challenge-lets .title_mt{
+      margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,137 @@
+.customArrow,
+.customArrowLeft {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.customArrow:focus,
+.customArrowLeft:focus {
+  outline: 0;
+}
+
+.customArrow .st0 {
+  display: none;
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 12;
+  -webkit-transition: 0.3s stroke-dashoffset;
+  -o-transition: 0.3s stroke-dashoffset;
+  transition: 0.3s stroke-dashoffset;
+}
+.customArrow .st1 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  -webkit-transition: 0.3s stroke-dashoffset;
+  -o-transition: 0.3s stroke-dashoffset;
+  transition: 0.3s stroke-dashoffset;
+}
+
+.customArrow line.st1 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 95;
+}
+.customArrow .st1.three,
+.customArrow .st1.two {
+  stroke-dasharray: 125;
+}
+
+div.customArrow:hover line.st1.one {
+  stroke-dasharray: 95;
+  -webkit-animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  stroke-dashoffset: -45;
+}
+
+div.customArrow:hover .st1.three,
+div.customArrow:hover .st1.two {
+  stroke-dasharray: 125;
+  -webkit-animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  stroke-dashoffset: 95;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+}
+
+.customArrowLeft .st0 {
+  display: none;
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 12;
+}
+.customArrowLeft .st1 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  -webkit-transition: 0.3s stroke-dashoffset linear;
+  -o-transition: 0.3s stroke-dashoffset linear;
+  transition: 0.3s stroke-dashoffset linear;
+}
+
+svg.left {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+.customArrowLeft line.st1 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 95;
+}
+.customArrowLeft .st1.three,
+.customArrow .st1.two {
+  stroke-dasharray: 125;
+}
+
+div.customArrowLeft:hover line.st1.one {
+  stroke-dasharray: 95;
+  -webkit-animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  stroke-dashoffset: -45;
+}
+
+div.customArrowLeft:hover .st1.three,
+div.customArrowLeft:hover .st1.two {
+  stroke-dasharray: 125;
+  -webkit-animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  stroke-dashoffset: 95;
+}
+
+div.customArrowLeft:hover .st1.three,
+div.customArrowLeft:hover .st1.two {
+  stroke-dasharray: 125;
+  -webkit-animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation: dash 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  stroke-dashoffset: 95;
+}
+
+/* arrow animation for custom button with blue color background */
+.custom-button-white-arrow .customArrow .st1 {
+  stroke: #fff;
+}
+.custom-button-blue-arrow .customArrow .st1 {
+  stroke: #0068dc;
+}
+.customArrow {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.address-details .customArrow svg {
+  width: 30px;
+}

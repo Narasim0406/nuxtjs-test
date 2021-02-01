@@ -1,0 +1,181 @@
+  .bg-black{
+    div .page_footer_wrapper{
+  background-color: #000}
+  }
+  .footer-bg{
+    background-color:#000;
+    margin-top : 38rem;
+    
+  
+  .point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0069da;
+    
+    margin: 9px;
+  }
+  .underline-none{
+    text-decoration:none
+  }
+  .point:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-170%,-30%);
+    transform: translate(-170%,-30%);
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0069da;
+  }
+  ul{
+    list-style-type:none;
+    margin:0;
+    padding:0
+  }
+  ul>li{
+    color:#a5a5a5 !important;
+  }
+ .link1{
+    color: #a5a5a5 !important;
+    
+  }
+  .link1:hover{
+    color:#fff !important;
+  }
+  a{
+    text-decoration: none
+  }
+  ul>li:hover{
+    color:#fff;
+  }
+  .footer_column_title{
+    text-align:left;
+    font-size: 20px;
+    color:#fff; 
+    padding-bottom: 15px;
+  }
+  .footer_logo_wrapper{
+      img{
+          width: 200px;
+      }
+  }
+  .doodle_caption{
+    width:100%;
+    // color:#fff;
+  }
+  .page_footer_wrapper{
+    padding: 80px 80px 30px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+.copyrights{
+  font-size: .8rem;
+  font-weight: 300;
+}
+  .footer_column_content ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #a5a5a5;
+    font-size: 13px;
+    li{
+      padding: 3px 0;
+    }
+}
+.card-header{
+  text-align: center !important;
+  // background-color: #000 !important;
+  .btn-link{
+    color:#fff;
+  }
+}
+.card-body{
+  background-color: #000;
+  color:#fff;
+  
+}
+  .social_media_wrapper{
+    font-size: 2rem;
+    
+
+    a{
+      font-size: 2rem;
+      // margin: 0 0.5rem;
+      padding: 1rem;
+      // svg{
+      //   width:2.5rem;
+      //   font-size: 2rem;
+      //   margin: 0 0.5rem
+      // }
+    }
+  }
+}
+.accord-btn{
+  outline: none !important
+}
+.bg-black{
+  background-color: #000;
+}
+.card-header .btn-link{
+  text-decoration: none;
+}
+@include mobile-land {
+  .footer_logo_wrapper{
+    text-align: center;
+    img{
+      width:200px;
+    }
+    .doodle_caption1{  
+        text-align: center;  
+        color: #a5a5a5;
+        font-style: italic;
+        // padding: 5px 120px 5px 0;
+        font-size: 16px;
+           
+        
+    }
+    
+  }
+  .doodle_caption1{
+        text-align: center;  
+        color: #a5a5a5;
+        font-style: italic;
+        font-size: 16px;
+        
+  }
+}
+.footer_column{
+  link:hover {
+    color:none !important;
+  }
+}
+.doodle_caption{
+  color: #a5a5a5 !important;
+  font-style: italic;
+  padding: 5px 120px 5px 0;
+  font-size: 16px;
+}
+@include mobile-port-smart {
+  .footer-bg{
+    background-color:#000;
+    margin-top : 0;
+  }  
+  .doodle_caption{
+    color: #a5a5a5 !important;
+    font-style: italic;
+    padding: 2rem 1.5rem !important;
+    font-size: 16px;
+    text-align: center;
+  }
+  .doodle_caption{
+    width:100% !important;
+    // color:#fff;
+  }
+}

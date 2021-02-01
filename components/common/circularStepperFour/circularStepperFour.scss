@@ -1,0 +1,221 @@
+
+                .right-arrow-btn-step4{
+                    margin-top:3rem;
+                    cursor:pointer
+                   }
+               .within-circle-title-Stepper-four{
+                        font-size:2rem !important;
+                        font-weight: 500;
+                        color:$primary;
+                        margin: 5rem 0rem 1rem !important;
+                       +div p.within-circle-sub-title-stepper{
+                            color:#4F4F4F;
+                            font-size:2rem !important;
+                            padding: 0.5rem !important;
+                            display: flex;
+                            justify-content: center;
+                                }  
+                                .right-arrow-btn-step4{
+                                    margin-top:3rem;
+                                    cursor:pointer
+                                   }
+                    }
+                  // mt-4 
+                  @media (max-width: 560px) {
+                    .mid-content p {
+                        font-size: 1rem;
+                    }
+                    .challenge-lets .h3, .challenge-lets .h4 {
+                        font-size: 17px;
+                    }                        
+                    .mt-custom span {
+                        font-size: 13px;
+                    }
+                    .challenge-lets .custom-xs {
+                        flex: 0 0 33.333333%;
+                        max-width: 33.333333%;
+                        padding-right :0px;
+                        padding-left :0px;
+                    }
+                    .challenge-lets {
+                        min-height :315px
+                    }
+                }
+
+                @include mobile-port-smart {
+                    
+                  .within-circle-title-Stepper-four{
+                      font-size:0.8rem !important;
+                      font-weight: 500;
+                      color:$primary;
+                      margin: 2rem 0rem 1rem !important;
+                     +div p.within-circle-sub-title-stepper{
+                          color:#4F4F4F;
+                          font-size:0.8rem !important;
+                          padding: 0.5rem !important;
+                          display: flex;
+                          justify-content: center;
+                              }  
+
+                  }
+                  .form-stepper-choices{
+                      font-size:0.8rem !important;
+                      margin-top: 0.5rem !important;
+                      color:$primary;
+                      font-weight:normal;
+                      padding:1rem 3rem !important;
+                      border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                      border:none;
+                      &:focus{
+                          outline:none;
+                      }
+                      
+                  }
+                  .form-stepper-choices1{
+                      font-size:0.8rem !important;
+                      margin-top: 0.25rem !important;
+                      color:$primary;
+                      font-weight:normal;
+                      padding:0.5rem 3rem !important;
+                      border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                      border:none;
+                      &:focus{
+                          outline:none;
+                      }
+                      
+                  }
+                //  .right-arrow-btn{
+                //      margin-top:1rem !important;
+                //      width: 12% !important;
+                //      cursor:pointer
+                //  }
+                 .right-arrow-btn-step4{
+                  margin-top:0.5rem;
+                  width:12%;
+                  cursor:pointer
+                 }
+                 input:focus , .form-stepper-choices{
+                  outline: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none !important;
+                  }
+                  *:focus {
+                      outline: none;
+                      -webkit-box-shadow: none;
+                      box-shadow: none;
+                  }
+                  input:focus ,.form-stepper-choices {
+                      outline: none !important;
+                      text-align: center;
+                      width:80% !important;
+                      box-shadow: none;
+                      &::-webkit-input-placeholder { /* Edge */
+                          color: $primary;
+                          text-align: center;
+                        }
+                        
+                        &:-ms-input-placeholder { /* Internet Explorer */
+                          color: $primary;
+                          text-align: center;
+                        }
+                        
+                        &::placeholder {
+                          color: $primary;
+                          text-align: center;
+                        }
+                  }
+                }
+                    
+                          .within-circle-title-Stepper{
+                              font-size:2rem;
+                              font-weight: 500;
+                              color:$primary;
+                              margin: 7rem 0rem 2rem;
+                             +div p.within-circle-sub-title-stepper{
+                                  color:#4F4F4F;
+                                  font-size:2.2rem;
+                                  padding: 0.5rem;
+                                  display: flex;
+                                  justify-content: center;
+                                      }  
+
+                          }
+                          .form-stepper-choices{
+                              font-size:1.8rem;
+                              margin-top: 2rem;
+                              color:$primary;
+                              font-weight:normal;
+                              padding:2rem 8rem;
+                              border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                              border:none;
+                              &:focus{
+                                  outline:none;
+                              }
+                              
+                          }
+                          .form-stepper-choices1{
+                              font-size:1.8rem;
+                              margin-top: 2rem;
+                              color:$primary;
+                              font-weight:normal;
+                              padding:1rem 8rem;
+                              border-bottom:1px solid rgba(131, 128, 128, 0.58);
+                              border:none;
+                              &:focus{
+                                  outline:none;
+                              }
+                              
+                          }
+                         .right-arrow-btn{
+                             margin-top:6rem;
+                             cursor:pointer
+                         }
+                         .right-arrow-btn-step4{
+                          margin-top:1.5rem;
+                          cursor:pointer
+                         }
+                         input:focus , .form-stepper-choices{
+                          outline: none;
+                          -webkit-box-shadow: none;
+                          box-shadow: none;
+                          }
+                          *:focus {
+                              outline: none;
+                              -webkit-box-shadow: none;
+                              box-shadow: none;
+                          }
+                          input:focus ,.form-stepper-choices {
+                              outline: none !important;
+                              text-align: center;
+                              box-shadow: none;
+                              &::-webkit-input-placeholder { /* Edge */
+                                  color: $primary;
+                                  text-align: center;
+                                }
+                                
+                                &:-ms-input-placeholder { /* Internet Explorer */
+                                  color: $primary;
+                                  text-align: center;
+                                }
+                                
+                                &::placeholder {
+                                  color: $primary;
+                                  text-align: center;
+                                }
+                          }
+                          @include laptop-end-mobile {
+                            .within-circle-title-Stepper-four{
+                                font-size:1.5rem !important;
+                                font-weight: 500;
+                                color:$primary;
+                                margin: 3.5rem 0rem 1rem !important;
+                               +div p.within-circle-sub-title-stepper{
+                                    color:#4F4F4F;
+                                    font-size:1rem !important;
+                                    padding: 0.5rem !important;
+                                    display: flex;
+                                    justify-content: center;
+                                        }  
+          
+                            }
+                          }

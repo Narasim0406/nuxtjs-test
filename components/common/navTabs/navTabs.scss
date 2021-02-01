@@ -1,0 +1,19 @@
+.nav-btn{
+    width :11rem;
+    height: 4rem;
+    color: $black;
+    font-size: 1rem;
+    font-weight:bold;
+    border: 2px solid $primary;
+    &.active{
+        background-color: $primary;
+        color: $white;
+    }
+    &:hover{
+        background-color: $primary;
+        color: $white;
+    }
+}
+.navtabs-container{
+    margin:5% 5%
+}

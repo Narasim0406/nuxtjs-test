@@ -1,0 +1,21 @@
+.list-container{
+    // background-color: #000;
+    margin: 5% 20%;
+
+}
+
+.mini-list-container{
+    margin: 5% 28%;
+}
+
+@include laptop-end{
+    .list-container{
+        // background-color: #000;
+        margin: 5% 10%;
+    
+    }
+    
+    .mini-list-container{
+        margin: 5% 15%;
+    }
+}

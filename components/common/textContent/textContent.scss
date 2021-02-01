@@ -1,0 +1,65 @@
+.normal-content{
+  font-weight:300;
+  font-size:2rem;
+  padding: 0 5rem;
+}
+.community_title{
+  color: $primary;
+  font-size:3rem;
+  font-weight:bold;
+}
+.normal-title{
+color: $primary;
+font-size:2rem;
+padding-top: 4rem;
+padding:2rem 10rem;
+font-weight:normal;
+}
+.normal-paragraph{
+color: #4F4F4F;
+font-size:3rem;
+font-weight:300;
+padding:3rem 10rem;
+}
+.lighter-title{
+color: $primary;
+font-size:3rem;
+font-weight:300;
+padding:3rem 10rem;
+}
+.normal-content{
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+}
+.bigger-blue-text{
+  font-size: 3rem;
+  font-weight: 400;
+  color:$primary;
+}
+.p-50{
+  padding: 0 20%;
+}
+
+@include mobile-port-smart {
+  .normal-title{
+    color: $primary;
+    font-size:1rem;
+    text-align: center;
+    padding:2rem 0rem;
+    font-weight:normal;
+    }
+    .normal-content{
+      font-weight:300;
+      font-size:1rem !important;
+    } 
+    .sub-content{
+      font-size: 1rem;
+      
+    } 
+}
+@include tab-port {
+  .normal-title{
+    font-size: 1rem;
+  }
+}

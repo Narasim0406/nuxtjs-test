@@ -109,7 +109,14 @@ handleInputChange = (event) => {
       link:name
     }
     console.log(downloadLink,"DL")
-  this.setState({downloadLink:downloadLink,setModal:!this.state.setModal})
+  this.setState({downloadLink:downloadLink})
+  if(localStorage.getItem('user')){
+    
+  } else {
+    this.setState({setModal:!this.state.setModal})
+
+  }
+
   }
   hideModal=(value)=>{
     this.checkLog()
@@ -185,7 +192,11 @@ handleInputChange = (event) => {
                             <div className="card-icon-list">
                               <img className="img-icon" src={name.link} />
                               <div className="icon-actions"  >
-                              {!loggedIn?<img className="download-list-icon" src="/download.svg" onClick={()=>this.showModal(name,index)} />:<a href={`${name.link}`}  download><img className="download-list-icon" src="/download.svg" /></a>}
+                              {/* {
+                              !loggedIn ? 
+                              <img className="download-list-icon" src="/download.svg" onClick={()=>this.showModal(name,index)} />:<a href={`${name.link}`}  download><img className="download-list-icon" src="/download.svg" /></a>
+                              } */}
+                              <img className="download-list-icon" src="/download.svg" onClick={()=>this.showModal(name,index)} />
                                 <div class="tooltip">
                                   <img className="share-list-icon" src="/share-2.svg" />
                                   <span class="tooltiptext">

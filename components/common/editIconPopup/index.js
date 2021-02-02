@@ -21,6 +21,8 @@ import {
 // import { SketchPicker } from 'react-color';
 import { ChromePicker } from 'react-color'
 import {IconShowcaseDownload} from '../index'
+import dynamic from 'next/dynamic'
+const SignUpForm = dynamic(() => import('../signUpForm'))
 // import dynamic from 'next/dynamic'
 // const IconShowcaseLeft = dynamic(() => import('../iconShowcaseDownload'))
 
@@ -38,7 +40,9 @@ export class EditIconPopup extends React.Component {
       setShow:false,
       toggle:false,
       background:'#333',
+      loggedIn:false,
       downloadState:false,
+      downloadLink:"src/",
       formData: { // set up default form values
         name:"",
         email:""
@@ -119,6 +123,28 @@ downloadIcon=()=>{
   this.refs.child.downloadSVG()
 }
 
+checkLog=()=>{
+  if(localStorage.getItem('user')){
+    this.setState({loggedIn:true})
+  }
+}
+
+showModal=(name)=>{
+  console.log("fdhgfhgdfrtyrt", this.props, this.state, name)
+  this.setState({downloadLink:name})
+    if(localStorage.getItem('user')){
+      this.downloadIcon()
+    } else {
+    this.setState({setModal:!this.state.setModal})
+
+  }
+}
+hideModal=(value)=>{
+  this.setState({setModal:!this.state.setModal})
+  this.checkLog()
+
+}
+
 
 componentDidMount(){
   // this.checkAttribute()
@@ -142,7 +168,7 @@ componentDidMount(){
       left: '0px',
     }
     
-    let {background,downloadState}=this.state
+    let {background,downloadState,loggedIn}=this.state
     let {list,selectedIcon}=this.props
     
   return (
@@ -202,7 +228,8 @@ componentDidMount(){
                     </Row>
                     <Row className="my-3 ">
                       <Col md={8} className="pr-0">
-                        <Button onClick={this.downloadIcon} className="bg-primary shadow-sm text-white w-100 py-3" active>Download</Button>{' '}
+                        <Button onClick={loggedIn?this.downloadIcon:()=>this.showModal(selectedIcon.link.name)} className="bg-primary shadow-sm text-white w-100 py-3" active>Download</Button>
+                        {/* <Button onClick={this.downloadIcon} className="bg-primary shadow-sm text-white w-100 py-3" active>Download</Button>{' '} */}
                       </Col>  
                       <Col xl={2} lg={3} md={3} className="pr-0">
                         <Button className="bg-white border shadow-sm text-white py-3 w-75" onClick={this.openPopUp} active>
@@ -240,8 +267,8 @@ componentDidMount(){
                         </div>:''}
                       </Col>  
                     </Row> 
-                    <p className="text-black">License</p> 
-                    <p className="text-black">Lorem ipsum generator dummy text as of now is placed for a dummy license usage</p> 
+                    {/* <p className="text-black">License</p> 
+                    <p className="text-black">Lorem ipsum generator dummy text as of now is placed for a dummy license usage</p>  */}
                     <p className="color-blue">Notification Icon in Other Styles</p>
                   </div>
                   <Container fluid className="py-3 ">
@@ -259,6 +286,7 @@ componentDidMount(){
           
         </Modal.Body>
       </Modal>
+      <SignUpForm showModal={this.state.setModal} downloadLink={this.downloadIcon} onChange={this.hideModal}/>
     </>
   );
   }

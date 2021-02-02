@@ -6,6 +6,7 @@
   height:15rem;
   margin: 0.5rem;
   border: 2px solid $primary;
+  cursor: pointer;
   .hover-on{
     display: none;
   }
@@ -42,6 +43,7 @@
 }
 
 .blue-box {
+  cursor: pointer;
   &.hover-off :hover{
     display: none;
   }

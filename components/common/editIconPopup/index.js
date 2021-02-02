@@ -267,8 +267,8 @@ componentDidMount(){
                         </div>:''}
                       </Col>  
                     </Row> 
-                    {/* <p className="text-black">License</p> 
-                    <p className="text-black">Lorem ipsum generator dummy text as of now is placed for a dummy license usage</p>  */}
+                     <p className="text-black">License</p> 
+                    {/* <p className="text-black">Lorem ipsum generator dummy text as of now is placed for a dummy license usage</p>  */}
                     <p className="color-blue">Notification Icon in Other Styles</p>
                   </div>
                   <Container fluid className="py-3 ">

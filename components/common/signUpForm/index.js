@@ -116,6 +116,9 @@ componentDidMount(){
        
         <Modal.Body>
          <div className="signUpForm-modal">
+         <div className="text-right">
+                <img onClick={this.handleShow} src="/close.svg" className="close-btn-1" />
+                </div>
               <div className="text-center">
                 <img className="bg-Gif" src="/gifs2.gif"/>
                 <div>

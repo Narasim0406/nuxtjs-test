@@ -110,10 +110,10 @@ handleInputChange = (event) => {
     }
     console.log(downloadLink,"DL")
   this.setState({downloadLink:downloadLink})
+  this.setState({downloadLink:downloadLink,setModal:!this.state.setModal})
   if(localStorage.getItem('user')){
-    
+
   } else {
-    this.setState({setModal:!this.state.setModal})
 
   }
 

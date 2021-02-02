@@ -102,6 +102,7 @@ export class IconShowcaseDownload extends React.Component {
         },
       },
     });
+    console.log("adsfasdfasdf icone", this.props)
     return (
       <>
         <div>

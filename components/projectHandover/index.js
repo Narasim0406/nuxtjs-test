@@ -100,7 +100,7 @@ export class ProjectHandoverBody extends React.Component {
                     </div>
                     {/* <AlternateTextContent/> */}
                     <SendItIn/>
-                    <LookingParticular/>
+                    {/* <LookingParticular/> */}
                 </div>
             </>
         );

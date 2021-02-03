@@ -98,7 +98,7 @@ export class MobileMockupsBody extends React.Component {
                             </div>    
                     </div>
                     <SendItIn/>
-                    <LookingParticular/>
+                    {/* <LookingParticular/> */}
                     {/* <AlternateTextContent/> */}
                 </div>
             </>

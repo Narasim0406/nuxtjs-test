@@ -105,7 +105,7 @@ export class MobileThemesBody extends React.Component {
                     </div>
                     {/* <AlternateTextContent/> */}
                     <SendItIn/>
-                    <LookingParticular/>
+                    {/* <LookingParticular/> */}
                 </div>
                 
             </>

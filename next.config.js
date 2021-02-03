@@ -11,9 +11,9 @@ module.exports = {
       
       '/free-icons': { page: '/icons' },
 
-      '/design': { page: '/design' },
-
       '/code': { page: '/code' },
+
+      '/design': { page: '/design' },
       
       '/animated-icons':{page: '/gifs'},
 

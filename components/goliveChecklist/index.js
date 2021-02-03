@@ -103,7 +103,7 @@ export class GoliveChecklistBody extends React.Component {
                     </div>
                     {/* <AlternateTextContent/> */}
                     <SendItIn/>
-                    <LookingParticular/>
+                    {/* <LookingParticular/> */}
                 </div>
             </>
         );

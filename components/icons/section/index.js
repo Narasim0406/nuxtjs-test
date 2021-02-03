@@ -38,7 +38,7 @@ export class Section extends React.Component {
         <MiddleContent/>
         {/* <AlternateTextContent/> */}
         <SendItIn/>
-        <LookingParticular/>
+        {/* <LookingParticular/> */}
       </div>    
        
       </>

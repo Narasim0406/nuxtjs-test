@@ -78,7 +78,7 @@ export class MiddleContent extends React.Component {
        />
        {/* <NavTabs/> */}
        <SendItIn/>
-       <LookingParticular/>
+       {/* <LookingParticular/> */}
       </> 
     )
   }

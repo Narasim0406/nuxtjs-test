@@ -105,7 +105,7 @@ class FileList extends React.Component {
     searchDataFromList = () => {
         const {searchValue} = this.state;
         const {listData}  = this.props;
-        debugger
+        // debugger
         this.setState({
             listData : CommonMethods.filterData(listData, searchValue, 'title'),
             searchState:true
@@ -172,7 +172,7 @@ class FileList extends React.Component {
                         </div>                    
                     }
                 </div>
-                {paginatedList!==undefined&&searchState==false?<div className={`documents-card mb-4 ${paginatedList!==undefined&&paginatedList>12?'paginated-content':''}`}>
+                {paginatedList!==undefined&&searchState==false?<div className={`documents-card mb-4 ${paginatedList!==undefined&&paginatedList>12?'paginated-content h-100':''}`}>
                     <div className="row">
                         {Object.keys(paginatedList).map((index, key) => {
                             return (
@@ -257,7 +257,7 @@ class FileList extends React.Component {
                     </div>
                     
                 </div>:
-                <div className={`documents-card mb-4 ${paginatedList!==undefined&&listData.length>12?'paginated-content':''}`}>
+                <div className={`documents-card mb-4 ${paginatedList!==undefined&&listData.length>12?'paginated-content h-100':''}`}>
                     {!comingSoon?<div className="row">
                         {Object.keys(listData).map((index, key) => {
                             return (

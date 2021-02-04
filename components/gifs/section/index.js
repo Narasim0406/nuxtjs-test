@@ -1,5 +1,5 @@
 import React from "react";
-
+import SendItIn from "../../common/sendItIn";
 
 import dynamic from 'next/dynamic'
   const AlternateTextContent = dynamic(() => import('../../common/alternateTextContent'))
@@ -36,7 +36,9 @@ export class Section extends React.Component {
       bannerImg={bannerImg}
       />
         <MiddleContent/>
-        <AlternateTextContent/>
+        {/* <AlternateTextContent/> */}
+        <SendItIn/>
+        {/* <LookingParticular/> */}
       </div>    
        
       </>
